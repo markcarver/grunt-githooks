@@ -1,6 +1,6 @@
 var exec = require('child_process').exec;
 
-exec('grunt {{task}}{{#if args}} {{args}}{{/if}}', {
+exec('{{gruntPath}} {{task}}{{#if args}} {{args}}{{/if}}', {
        cwd: '{{gruntfileDirectory}}'
      }, function (err, stdout, stderr) {
   
