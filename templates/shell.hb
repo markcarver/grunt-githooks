@@ -1,1 +1,1 @@
-(cd {{gruntfileDirectory}} && {{gruntPath}} {{task}}{{#if args}} {{args}}{{/if}})
+(cd {{gruntfileDirectory}} && {{nodePath}} {{gruntPath}} {{task}}{{#if args}} {{args}}{{/if}})
